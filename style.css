@@ -5,11 +5,17 @@ body {
 
 nav {
   background-color: #36454f;
-  width: 10%;
+  width: 7.5rem;
   height: 100%;
-  margin-left: 0;
+  margin-left: -4rem;
   margin-top: 0;
   position: fixed;
+  transition: 0.5s;
+}
+
+nav:hover {
+  margin-left: 0;
+  /*margin-top: 0;*/
 }
 
 ul {
@@ -24,10 +30,40 @@ a {
 }
  li {
    padding: 3rem 0;
+   width: 4rem;
+   height: 4rem;
+   margin-left: 0;
+   text-align: left;
+ }
+
+ a:hover {
+   color: #d3d3d3;
  }
 
 img {
-  width: 80%;
-  /*margin: -3rem;*/
   padding: 0;
+  margin: 0;
+  width: 5rem;
+}
+
+@-webkit-keyframes spaceboots {
+0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+10% { -webkit-transform: translate(-1px, -2px) rotate(-8deg); }
+20% { -webkit-transform: translate(-3px, 0px) rotate(8deg); }
+30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+40% { -webkit-transform: translate(1px, -1px) rotate(8deg); }
+50% { -webkit-transform: translate(-1px, 2px) rotate(-8deg); }
+60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+70% { -webkit-transform: translate(2px, 1px) rotate(-8deg); }
+80% { -webkit-transform: translate(-1px, -1px) rotate(8deg); }
+90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+100% { -webkit-transform: translate(1px, -2px) rotate(-8deg); }
+}
+.shake:hover,
+.shake:focus {
+-webkit-animation-name: spaceboots;
+-webkit-animation-duration: 1.5s;
+-webkit-transform-origin:50% 50%;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
 }
