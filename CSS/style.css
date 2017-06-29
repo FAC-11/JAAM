@@ -135,6 +135,10 @@ nav {
   position: fixed;
   transition: 0.5s;
   text-align: center;
+<<<<<<< HEAD
+=======
+  z-index: 1;
+>>>>>>> f2d74439f217067e95742422fd46b0db6eb10e95
 }
 
 nav:focus {
@@ -221,3 +225,55 @@ img {
     width: 8rem;
   }
 }
+<<<<<<< HEAD
+=======
+
+.heading {
+  font-size: 20rem;
+  font-family: Monoton, sans-serif;
+  color: #2F4F4F;
+}
+
+.subheading {
+  font-size: 3rem;
+  font-family: Nunito, sans-serif;
+  color: #36454f;
+  display: block;
+}
+
+#home {
+  height: 100%;
+  background: url("../splash-background.jpeg") no-repeat fixed center;
+}
+
+.container-element {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: hsla(0, 100%, 80%, 0.6);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: color-change 8s infinite;
+}
+
+@keyframes color-change {
+  0% { background-color: hsla(0, 100%, 80%, 0.6);}
+  10% { background-color: hsla(36, 100%, 80%, 0.6);}
+  20% { background-color: hsla(72, 100%, 80%, 0.6);}
+  30% { background-color: hsla(108, 100%, 80%, 0.6);}
+  40% { background-color: hsla(144, 100%, 80%, 0.6);}
+  50% { background-color: hsla(180, 100%, 80%, 0.6);}
+  60% { background-color: hsla(216, 100%, 80%, 0.6);}
+  70% { background-color: hsla(250, 100%, 80%, 0.6);}
+  80% { background-color: hsla(288, 100%, 80%, 0.6);}
+  90% { background-color: hsla(324, 100%, 80%, 0.6);}
+  100% { background-color: hsla(0, 100%, 80%, 0.6);}
+}
+
+#about, #team, #contact {
+  padding-top: 1rem;
+}
+>>>>>>> f2d74439f217067e95742422fd46b0db6eb10e95
