@@ -49,10 +49,22 @@ Then we created issues for each user story and within that, issues for each big 
 
 Then we decided for one pair to work on the navigation bar and one pair to create the form.
 
-Navigation Bar:
+## Problems we had
+
+__Navigation Bar:__
 
 We decided on a vertical navigation bar which expands upon hovering. We initially tried not to use flex boxes for this but struggled to centre the elements vertically. Using flex boxes on the ul item was much easier (ul is essentially the container for the list items and these are what we wanted centred).
 
 Had issue with padding on the ul element - was pushing all our icons on the nav bar to the right. We solved it by inspecting the elements on the browser and seeing the highlighted areas to see how they differ (padding shows in green). Turns out we forgot to remove the ul's default padding (duh). 
 
+__Form Location__
 
+To create the form we looked at examples on other websites, such as Founders and Coders, among other websites containing contact forms similar to what we were looking for. We knew we wanted a simple interface that was easy to use whilst still being accessible, as well as being responsive enough to be comfortably used on phones, tablets and larger screens. We knew that the various form inputs and the larger message box could potentially pose an issue when accessed on very small screens.
+
+When we had created a form we were happy with we ran into trouble with our navigation bar as it slides out slightly on hover which meant that it would sometimes obscure parts of the form on smaller view-ports. We could not reach a solution for quiet a while as when we were able to stop the form from being obscured in smaller view-ports by using a margin; in larger ones the entire form would be off center.
+
+When we eventually discussed the problem with the rest of our team members they had found a solution to the problem that had been affecting a different element they were working on. They had simply added a margin to the encasing `<main>` element so that everything shifted together.
+
+__Form Background__
+
+Another problem we had with the form was that the background colour we had used would extend upwards to the top of the section above, crossing through a separate section. We had seen that when we set our form element to `float: left` the background acted as we had expected it too, however the form was not positioned where we wanted it. Samatar suggested that the floats we had used in the section above could be the cause of the problem, and after adding a `clear: both` to the form the problem had been solved.
