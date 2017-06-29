@@ -10,7 +10,7 @@ html, body {
 
 nav {
   background-color: #36454f;
-  width: 6rem;
+  width: 10rem;
   height: 100%;
   margin-top: 0;
   position: fixed;
@@ -18,8 +18,8 @@ nav {
   text-align: center;
 }
 
-nav:hover {
-  width: 8rem;
+nav:focus {
+  width: 16rem;
 }
 
 ul {
@@ -37,6 +37,8 @@ a {
   text-decoration: none;
   color: grey;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 a:hover {
@@ -90,4 +92,13 @@ img {
   -webkit-transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    width: 6rem;
+  }
+  nav:hover {
+    width: 8rem;
+  }
 }
