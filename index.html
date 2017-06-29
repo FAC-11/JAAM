@@ -11,7 +11,7 @@
 <body>
 
   <nav role="navigation">
-    <ul>
+    <ul class="navbar">
       <li><a href="#"><img src="jam-icon.svg" class="shake" alt="JAAM">Home</a></li>
       <li><a href="#about"><i class="fa fa-question fa-5x" alt="About" aria-hidden="true" title="About"></i>About</a></li>
       <li><a href="#team"><i class="fa fa-user-o fa-5x" alt="Team" aria-hidden="true" title="Team"></i>Team</a></li>
@@ -21,47 +21,77 @@
 
   <main>
 
-  <section>
+    <section>
 
-  </section>
+    </section>
 
-  <section id="about">
+    <section id="about">
 
-  </section>
+    </section>
 
-  <section id="team">
+    <section id="team">
+      <ul class="gallery">
+        <li><img src="james.svg" class="expand" alt="James Jam Photo">
+          <h2>James</h2>
+          <p>Jam Taster</p>
+          <a href="https://www.codewars.com/users/RogeredBacon" alt="James Codewars"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/williamhgates/" alt="James LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/RogeredBacon" alt="James GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <li><img src="amelie.svg" class="expand" alt="Amelie Jam Photo">
+          <h2>Amelie</h2>
+          <p>Jam Maker</p>
+          <a href="https://www.codewars.com/users/ameliejyc" alt="James Codewars"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/williamhgates/" alt="James LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/ameliejyc" alt="James GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <li><img src="max.svg" class="expand" alt="Max Jam Photo">
+          <h2>Max</h2>
+          <p>Jam Jarrer</p>
+          <a href="https://www.codewars.com/users/maxgerber" alt="James Codewars"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/williamhgates/" alt="James LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/maxgerber" alt="James GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <li><img src="aseel.svg" class="expand" alt="Aseel Jam Photo">
+          <h2>Aseel</h2>
+          <p>Secret Recipe Keeper</p>
+          <a href="https://www.codewars.com/users/AsselM" alt="James Codewars"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/williamhgates/" alt="James LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/AsselM" alt="James GitHub"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </li>
+      </ul>
 
-  </section>
+    </section>
 
 
 
-  <section id="contact">
-    <form action="/" method="post" tabindex="0">
-      <h1 tabindex="0"> Get in Touch! </h1>
+    <section id="contact">
+      <form action="/" method="post" tabindex="0">
+        <h1 tabindex="0"> Get in Touch! </h1>
 
-      <fieldset>
+        <fieldset>
 
-        <legend tabindex="0"><span class="number">1</span> Your Basic Info</legend>
+          <legend tabindex="0"><span class="number">1</span> Your Basic Info</legend>
 
-        <label for="title">Title</label>
-        <select id="title" name="user_title" tabindex="0">
+          <label for="title">Title</label>
+          <select id="title" name="user_title" tabindex="0">
             <option value="mr">Mr.</option>
             <option value="mrs">Mrs.</option>
             <option value="miss">Miss</option>
             <option value="ms">Ms.</option>
           </select>
 
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" tabindex="0">
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="first_name" tabindex="0">
 
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" tabindex="0">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="last_name" tabindex="0">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="user_email" tabindex="0">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="user_email" tabindex="0">
 
-        <label for="job">Nature of Project:</label>
-        <select id="job" name="user_job" tabindex="0">
+          <label for="job">Nature of Project:</label>
+          <select id="job" name="user_job" tabindex="0">
             <optgroup label="Web">
               <option value="frontend_developer">Front-End Developer</option>
               <option value="php_developer">PHP Developer</option>
@@ -81,20 +111,20 @@
               <option value="portfolio">Freelancer/Portfolio</option>
             </optgroup>
           </select>
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
+        <fieldset>
 
-        <legend tabindex="0"><span class="number">2</span> Contact Us</legend>
+          <legend tabindex="0"><span class="number">2</span> Contact Us</legend>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="user_message" tabindex="0"></textarea>
-      </fieldset>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="user_message" tabindex="0"></textarea>
+        </fieldset>
 
-      <button type="submit" tabindex="0">Send</button>
-    </form>
-  </section>
-</main>
+        <button type="submit" tabindex="0">Send</button>
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>
