@@ -19,6 +19,7 @@ form {
 
 main {
   transition: 1s;
+  margin-left: 10rem;
 }
 
 h1 {
@@ -208,13 +209,13 @@ img {
 }
 
 .heading {
-  font-size: 20rem;
+  font-size: 20vw;
   font-family: Monoton, sans-serif;
   color: #2F4F4F;
 }
 
 .subheading {
-  font-size: 4rem;
+  font-size: 10vw;
   font-family: Nunito, sans-serif;
   color: #36454f;
   display: block;
