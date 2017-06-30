@@ -236,7 +236,7 @@ img {
 
 #home {
   height: 100%;
-  background: url("../splash-background.jpeg") no-repeat fixed top;
+  background: url("../images/splash-background.jpeg") no-repeat fixed top;
 }
 
 .container-element {
