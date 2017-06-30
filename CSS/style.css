@@ -19,6 +19,7 @@ form {
 }
 main {
   transition: 1s;
+  margin-left: 10rem;
 }
 h1 {
   margin: 0 0 30px 0;
@@ -125,6 +126,8 @@ html, body {
   box-sizing: border-box;
 }
 
+
+
 * {
   box-sizing: inherit;
 }
@@ -163,7 +166,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 a:hover {
   color: #d3d3d3;
   transition: 0.8s;
@@ -220,13 +222,13 @@ img {
 
 
 .heading {
-  font-size: 20rem;
+  font-size: 20vw;
   font-family: Monoton, sans-serif;
   color: #2F4F4F;
 }
 
 .subheading {
-  font-size: 4rem;
+  font-size: 10vw;
   font-family: Nunito, sans-serif;
   color: #36454f;
   display: block;
@@ -568,4 +570,11 @@ TEAM SECTION
           margin: 10px auto 10px 6rem;
         }
 
+        .heading {
+          font-size: 25vw;
+        }
+
+        .subheading {
+          font-size: 5vw;
+        }
       }
