@@ -41,6 +41,10 @@ h1 {
   width: 90%;
   margin: 1rem auto 0;
 }
+#main-img {
+  text-align: center;
+  display: inline-block;
+}
 
 input[type="text"], input[type="email"], textarea, select {
   background: rgba(255, 255, 255, 0.1);
@@ -176,6 +180,16 @@ img {
   width: 4rem;
 }
 
+
+.shake:hover, .shake:focus {
+  -webkit-animation-name: spaceboots;
+  -webkit-animation-duration: 1.5s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+
 @-webkit-keyframes spaceboots {
   0% {
     -webkit-transform: translate(2px, 1px) rotate(0deg);
@@ -212,14 +226,6 @@ img {
   }
 }
 
-.shake:hover, .shake:focus {
-  -webkit-animation-name: spaceboots;
-  -webkit-animation-duration: 1.5s;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-
 .heading {
   font-size: 16vh;
   font-family: Monoton, sans-serif;
@@ -230,6 +236,7 @@ img {
   font-size: 8vh;
   font-family: Nunito, sans-serif;
   color: #36454f;
+  padding-bottom: 15vh;
 }
 
 #home {
@@ -245,7 +252,7 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   animation: color-change 8s infinite;
 }
@@ -291,11 +298,11 @@ img {
 }
 
 #about p {
-  -webkit-column-count: 3;
+  -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
-  -moz-column-count: 3;
+  -moz-column-count: 2;
   /* Firefox */
-  column-count: 3;
+  column-count: 2;
   -moz-column-gap: 1rem;
   -webkit-column-gap: 1rem;
   margin: 1rem 3rem;
@@ -392,9 +399,20 @@ TEAM SECTION
     margin: 10px auto 10px 6rem;
   }
   .heading {
-    font-size: 28vh;
+    font-size: 45vh;
   }
   .sub-heading {
     font-size: 10vh;
+  }
+
+  #about p {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+    -moz-column-gap: 1rem;
+    -webkit-column-gap: 1rem;
+    margin: 1rem 3rem;
   }
 }
